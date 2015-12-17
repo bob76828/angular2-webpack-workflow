@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true
+  },
+  "compileOnSave": false,
+  "files": [
+    "assets/client/bootstrap.ts",
+    "assets/client/app/home/component.ts",
+    "assets/client/vendor.ts"
+  ]
+}
