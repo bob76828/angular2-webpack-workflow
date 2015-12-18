@@ -8,10 +8,11 @@ var gulpHelp = require('gulp-help');
 var typescript = require('gulp-typescript');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
+var tsconfig = require('./../tsconfig.server.json');
 
 gulpHelp(gulp);
 
-gulp.task('dev:clean_build', false, function() {
+gulp.task('dev:cleanBuild', false, function() {
   del.sync(['build']);
   console.log('build cleaned');
 });
@@ -49,18 +50,14 @@ gulp.task('dev:serve', false, function() {
 gulp.task('dev:typescript', false, function() {
   return gulp.src(['typings/main.d.ts', 'assets/server/**/*.ts'])
     .pipe(sourcemaps.init())
-    .pipe(typescript({
-      noImplicitAny: true,
-      "target": "ES5",
-      "module": "commonjs"
-    }))
+    .pipe(typescript(tsconfig))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('build'));
 });
 
 
-gulp.task('dev', 'Start development server', ['dev:clean_build'], function(callback) {
+gulp.task('dev', 'Start development server', ['dev:cleanBuild'], function(callback) {
   runSequence(
-    ['dev:webpack-dev-server'],
+    ['dev:webpack-dev-server', 'dev:typescript'],
     callback);
 });

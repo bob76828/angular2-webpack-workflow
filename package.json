@@ -1,10 +1,9 @@
 {
   "name": "angular2-workflow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
-    "build": "webpack --config webpack.build.js -p",
-    "dev": "gulp dev",
-    "task": "gulp"
+    "task": "gulp",
+    "start": "node app"
   },
   "license": "MIT",
   "dependencies": {

@@ -12,3 +12,4 @@ import 'rxjs';
 
 import 'file?name=404.html!./public/404.html';
 import 'file?name=humans.txt!./public/humans.txt';
+import 'file?name=robots.txt!./public/robots.txt';
