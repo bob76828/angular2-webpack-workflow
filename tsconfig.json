@@ -8,10 +8,9 @@
     "sourceMap": true,
     "noImplicitAny": false
   },
-  "compileOnSave": false,
+  "compileOnSave": true,
   "files": [
     "assets/client/bootstrap.ts",
-    "assets/client/app/home/component.ts",
     "assets/client/vendor.ts"
   ]
 }

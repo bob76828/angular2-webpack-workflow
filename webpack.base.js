@@ -19,7 +19,7 @@ function webpackConfig() {
         chunkFilename: '[name].bundle.js'
     };
 
-    config.devtool = 'eval';
+    config.devtool = 'inline-source-map';
 
     config.postcss = [
         autoprefixer({
