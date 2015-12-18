@@ -10,6 +10,6 @@ import 'angular2/router';
 import 'angular2/http';
 import 'rxjs';
 
-import 'file?name=404.html!./public/404.html';
+import 'file?name=404.html!./public/404.html.txt';
 import 'file?name=humans.txt!./public/humans.txt';
 import 'file?name=robots.txt!./public/robots.txt';
