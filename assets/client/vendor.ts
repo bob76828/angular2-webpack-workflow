@@ -9,6 +9,7 @@ import 'angular2/core';
 import 'angular2/router';
 import 'angular2/http';
 import 'rxjs';
+import 'bootstrap-sass/assets/javascripts/bootstrap.js';
 
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 import 'font-awesome/scss/font-awesome.scss';
