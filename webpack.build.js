@@ -32,6 +32,9 @@ webpackConfig.plugins.push(
     output: {
       comments: false
     }
+  }),
+  new webpack.DefinePlugin({
+    DEBUG: false
   })
 );
 
