@@ -11,7 +11,7 @@ import {Page1} from './views/page1/component.ts';
   template: `
   <header></header>
   <main><router-outlet></router-outlet></main>
-  <footer></footer>
+  <footer class="footer"></footer>
   `,
   directives: [ROUTER_DIRECTIVES, Header, Footer]
 })
